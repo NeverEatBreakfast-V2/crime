@@ -35,4 +35,18 @@
 
     <script>
         function detectCriminal() {
-            var
+            var color = document.getElementById("colorChoice").value;
+            var message = "";
+
+            if (color === "black" || color === "blacker") {
+                message = "Uh-oh... the system says you *might* be a criminal! 👀";
+            } else {
+                message = "Police: You're safe! The system detects no criminal tendencies. 😊";
+            }
+
+            document.getElementById("result").innerHTML = message;
+        }
+    </script>
+
+</body>
+</html>
